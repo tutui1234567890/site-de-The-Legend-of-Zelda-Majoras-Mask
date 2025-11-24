@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    document.addEventListener("DOMContentLoaded", function(){
+      let txt = document.getElementById('texto');
+      txt.texContent = "sdfdsgdsf";
+
+    });
+    function mudarcor(){
+      let txt = document.getElementById('texto');
+      txt.style.backgroundColor = "red";
+    };
+    function mudartamanho(){
+      let img = document.getElementById('img');
+      img.setAttribute("width", 300);
+    };
+  </script>
+</head>
+<body>
+  <div>
+    <p id="texto">teste</p>
+    <button onclick="mudarcor()">aperte aqui para asdfasgfgsdf</button>
+  </div>
+  <div>
+    <img src="https://png.pngtree.com/background/20230615/original/pngtree-green-field-filled-with-grass-picture-image_3545779.jpg" alt=""><br>
+    <button onclick="mudartamanho()">mudar de tamanho</button>
+
+  </div>
+  
+</body>
+</html>

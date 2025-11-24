@@ -1,0 +1,80 @@
+body {
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(to left, #1a881a, rgb(50, 9, 73));
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  background-color: #22b24d;
+  color: #7f1883
+}
+
+h2 {
+  background-color: #a012b9;
+  color: #3322b2;
+}
+
+h1,h2,#video,#galeria,header,#cadastro,footer,aside,nav{
+  text-align: center;
+}
+
+header{
+  background-image: url("https://tse3.mm.bing.net/th/id/OIP.oBE-GEhueWtlSg2C0_d7egHaEK?cb=ucfimg2ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3");
+  height: 500px;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
+
+.formatarform{
+  background-image: linear-gradient(to right, rgb(40, 73, 58), rgb(102, 38, 99));
+  color: black;
+  width: fit-content;
+  margin: 0px auto;
+  padding: 20px;
+  border-style: ridge groove;
+  border-width: 10px;
+  border-color: rgb(89, 0, 255) rgb(89, 0, 255) rgb(89, 0, 255) rgb(89, 0, 255);
+}
+
+article, #lista-img{
+  overflow: auto;
+}
+
+#sobre img, #lista-img img{
+  float: left;
+}
+
+.centralizartag{
+  width: fit-content;
+  margin: auto auto;
+}
+
+.container-principal{
+  display: flex;
+  flex-direction: row;
+}
+
+header, aside,nav,aside,section,footer{
+  margin-top: 10px;
+  border-style: solid;
+  border-color: black;
+  border-width: 5px;
+  border-radius: 30px;
+  padding: 5px;
+}
+
+aside{
+  padding-top: 20px;
+  width: fit-content;
+  background-color: rgb(178, 207, 110);
+}
+section{
+  flex: 1;
+  margin-left: 10px;
+}
+aside a{
+  width: 150px;
+}

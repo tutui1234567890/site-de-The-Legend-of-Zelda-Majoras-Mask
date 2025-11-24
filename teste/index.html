@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Teste 12</title>
+  </head>
+  <body>
+    <h2>Teste 12 - Exibir imagem a partir de um link</h2>
+
+    <!-- Seção para inserir o link da imagem -->
+    <div>
+      <input
+        type="text"
+        id="linkImagem"
+        placeholder="Cole aqui o link da imagem..."
+        style="width: 300px"
+      />
+      <button onclick="mostrarImagem()">Mostrar Imagem</button>
+    </div>
+
+    <!-- A imagem aparecerá aqui -->
+    <div style="margin-top: 15px;">
+      <img id="imagemExibida" src="" alt="Sua imagem aparecerá aqui" style="max-width: 400px; display: none; border: 1px solid #ccc; padding: 5px;" />
+    </div>
+
+    <script>
+      function mostrarImagem() {
+        const link = document.getElementById("linkImagem").value;
+        const imagem = document.getElementById("imagemExibida");
+
+        if (link.trim() !== "") {
+          imagem.src = link;
+          imagem.style.display = "block";
+        } else {
+          imagem.style.display = "none";
+          alert("Por favor, insira um link de imagem válido.");
+        }
+      }
+    </script>
+
+    <hr />
+
+    <!-- Código anterior do Teste 9 -->
+    <div>
+      <button onclick="receberMensagem()">Receber Variaveis</button>
+      <button onclick="mostrarMensagem()">Mostrar Mensagem</button>
+    </div>
+    <script>
+      let msg = '';
+      function receberMensagem() {
+        msg = prompt('Qual é o seu nome?');
+      }
+      function mostrarMensagem() {
+        alert(msg);
+      }
+    </script>
+
+    <div>
+      <button onclick="mensagemHtml()">Mostrar mensagem abaixo!</button>
+      <p id="mensagem"></p>
+    </div>
+    <script>
+      function mensagemHtml() {
+        let mensagem = document.getElementById('mensagem');
+        mensagem.textContent =
+          'Eu sou uma mensagem no site! Weeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee 🎶🎶🎶';
+      }
+    </script>
+
+    <div>
+      <input type="text" id="txtMensagem" />
+      <button onclick="receberMensagemTexto()">Receber Mensagem</button>
+      <p id="mensagem2"></p>
+    </div>
+    <script>
+      function receberMensagemTexto() {
+        let txtMensagem = document.getElementById('txtMensagem');
+        let mensagem2 = document.getElementById('mensagem2');
+        mensagem2.textContent = txtMensagem.value;
+      }
+    </script>
+  </body>
+</html>
